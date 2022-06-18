@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  background: url(images/bg-intro-desktop.png) repeat center center fixed;
+   background-color: hsl(0, 100%, 74%);
+  padding: 100px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.info {
+  color: white;
+  padding-right: 60px;
+  margin: auto;
+  padding: 2em;
+  padding-right: 3em;
+  width: 50%;
+}
+
+.info h1 {
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  line-height: 80px;
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.form-container {
+  padding: 60px;
+  margin: auto;
+  padding: 2em;
+  width: 50%;
+}
+
+form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form__group input {
+  width: 100%;
+  padding: 15px;
+  color: hsl(249, 10%, 26%);
+  border: 2px solid hsl(246, 25%, 88%);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.form__group input:focus {
+  border: 2px solid hsl(249, 10%, 50%);
+  outline: none !important;
+}
+
+.form__group .btn-submit {
+  width: 100%;
+  border-radius: 6px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0.2em rgb(93, 154, 126);
+}
+
+.form-header {
+  background-color: hsl(248, 32%, 49%);
+  color: hsl(246, 25%, 77%);
+  width: 100%;
+  font-size: smaller;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0px 0.5em rgb(219, 112, 112);
+}
+
+.form-header span {
+  font-weight: 1000;
+  color: white;
+}
+
+.form__group p {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.form__group p a {
+  color: red;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main {
+    padding: 10px;
+  }
+  .info,
+  .form-container {
+    width: 70%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .info h1 {
+    font-size: 2.2em;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .info,
+  .form-container {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    background: url(images/bg-intro-mobile.png) repeat center center fixed;
+    background-color: hsl(0, 100%, 74%);
+    min-height: 100vh;
+  }
+  .info,
+  .form-container {
+    width: 90%;
+    padding: 0.8rem;
+    margin: 0 auto;
+  }
+  form {
+    padding: 25px;
+  }
+
+  .info h1 {
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+  .info p {
+    font-size: 14px;
+  }
+
+  .form__group .btn-submit {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
